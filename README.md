@@ -1,4 +1,21 @@
-Build your own research-quality oceanographic instrument for a fraction of the cost of commercial alternatives. 
+# OpenCTD
+
+This is a fork of the OpenCTD project with a specific software implementation:
+- Implementing an RP2040 Adalogger with C++
+- Including logging of the typical CTD sensors
+  - Conductivity sensor (Atlas Scientific K 1.0 probe)
+  - 14-bar pressure sensor (MS5803-14BA)
+  - Temperature probe (PT-1000 with MAX31865, instead of the 3x DS18B20 probes)
+- Additional sensors
+  - GPS module (NEO-8M)
+  - IMU/Accelerometer (either MPU-6500 or LSM6DS3)
+  - Dissolved oxygen probe (Atlas Scientific DO probe ENV-50-DO)
+
+The logger integrates all of these for data logging.
+---
+
+### Original README
+
 
 Let's explore the ocean, together. 
 
